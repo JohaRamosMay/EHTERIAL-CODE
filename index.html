@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page Completa</title>
+  <title>Ethereal Code | Desarrollo Web</title>
   <!-- CDN de Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <!-- CDN de Animate.css -->
@@ -23,9 +23,16 @@
   <header class="header">
     <div class="container">
       <div class="logo">
-        <h1>Lexa</h1>
+        <h1><strong><span id="logo-text">ETHEREAL CODE</span> |</strong></h1>
       </div>
-      <nav class="menu">
+      <!-- Botón hamburguesa -->
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+
+      <!-- Botón cerrar -->
+      <div class="menu-close" id="menu-close">✖</div>
+
+      <!-- Menú de navegación -->
+      <nav class="menu" id="menu">
         <ul>
           <li><a href="#cta">Inicio</a></li>
           <li><a href="#mission">Nuestra Misión</a></li>
@@ -34,6 +41,8 @@
           <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
+
+
     </div>
   </header>
 
@@ -47,9 +56,10 @@
     </div>
   </section>
 
-
   <!-- Nuestra Misión -->
+ 
   <section id="mission" class="mission">
+    <canvas id="ethereal-canvas"></canvas>
     <div class="mission-content">
       <div class="mission-image-collage">
         <div class="phone-frame">
@@ -60,16 +70,18 @@
           </div>
         </div>
       </div>
+
       <div class="mission-text">
-        <h2>¿Cuál es nuestra misión?</h2>
+        <h2>Nuestra misión</h2>
         <p>
-          En <strong>Lexa</strong>, como diseñadores y desarrolladores web, creemos que cada empresa, sin importar su
-          tamaño, merece tener una presencia digital única y poderosa. Nuestra misión es ayudarte a construir una página
+          En <strong>Ethereal-Code</strong>, como diseñadores y desarrolladores web, creemos que cada empresa, merece
+          tener una presencia digital única y poderosa. Nuestra misión es ayudarte a construir una página
           web que refleje la esencia de tu negocio, ya sea una pequeña tienda o una gran corporación.
         </p>
         <p>
           Estamos comprometidos con ofrecerte soluciones innovadoras, adaptadas a tus necesidades, para que tu presencia
-          en línea sea tan impactante como tu visión. En Lexa, no solo creamos sitios web, creamos experiencias que
+          en línea sea tan impactante como tu visión. En <strong>Ethereal-Code</strong>, no solo creamos sitios web,
+          creamos experiencias que
           conectan con tus clientes y elevan tu marca a nuevas alturas.
         </p>
       </div>
@@ -77,11 +89,10 @@
   </section>
 
 
+  <!-- Portafolio -->
   <section id="portfolio" class="portfolio">
-    <h2>Portafolio</h2>
-    <p>Explora los proyectos destacados.</p>
-    <!-- Mensaje emergente -->
-    <div class="swiper-hint" id="swiperHint">Desliza para explorar</div>
+    <h2>Nuestros proyectos</h2>
+  
     <!-- Swiper -->
     <div class="swiper-container">
       <div class="swiper-wrapper">
@@ -89,11 +100,19 @@
         <div class="swiper-slide">
           <div class="showcase">
             <div class="device phone left">
+
               <img src="assets/img/mobile-garcialopez.png" alt="Vista móvil izquierda Proyecto 1">
+
             </div>
             <div class="device laptop">
-              <img src="assets/img/home_vetgarcialopez.png" alt="Vista escritorio Proyecto 1">
+              <a href="https://joharamosmay.github.io/Veterinaria-garcia-lopez/" target="_blank">
+                <img src="assets/img/home_vetgarcialopez.png" alt="Vista escritorio Proyecto 1">
+              </a>
             </div>
+          </div>
+
+          <div class="project-description">
+            <p>Proyecto 1: Se realizó un sitio web para una veterinaria.</p>
           </div>
         </div>
         <!-- Proyecto 2 -->
@@ -103,7 +122,9 @@
               <img src="assets/img/la1110-mobile.png" alt="Vista móvil izquierda Proyecto 3">
             </div>
             <div class="device laptop">
-              <img src="assets/img/la1110-home.png" alt="Vista escritorio Proyecto 3">
+              <a href="https://la1110.com/" target="_blank">
+                <img src="assets/img/la1110-home.png" alt="Vista escritorio Proyecto 3">
+              </a>
             </div>
           </div>
         </div>
@@ -114,10 +135,39 @@
               <img src="assets/img/tintadragon-mobile.png" alt="Vista móvil izquierda Proyecto 4">
             </div>
             <div class="device laptop">
-              <img src="assets/img/tintadragon-home.png" alt="Vista escritorio Proyecto 4">
+              <a href="https://tintadragon.com/" target="_blank">
+                <img src="assets/img/tintadragon-home.png" alt="Vista escritorio Proyecto 4">
+              </a>
             </div>
           </div>
         </div>
+        <!-- Proyecto 4 -->
+        <div class="swiper-slide">
+          <div class="showcase">
+            <div class="device phone left">
+              <img src="assets/img/artemisia-mobile.jpg" alt="Vista móvil izquierda Proyecto 5">
+            </div>
+            <div class="device laptop">
+              <a href="https://artemisiamontessori.com.ar/" target="_blank">
+                <img src="assets/img/artemisia.png" alt="Vista escritorio Proyecto 5">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 5 -->
+        <div class="swiper-slide">
+          <div class="showcase">
+            <div class="device phone left">
+              <img src="assets/img/valkyria-phone.jpg" alt="Vista móvil izquierda Proyecto 6">
+            </div>
+
+            <div class="device laptop">
+              <a href="Valkiria/index.html" target="_blank">
+                <img src="assets/img/home_valkyria.png" alt="Vista escritorio Proyecto 6">
+            </div>
+          </div>
+        </div>
+
 
       </div>
       <!-- Botones de navegación -->
@@ -126,15 +176,19 @@
       <!-- Paginación -->
       <div class="swiper-pagination"></div>
     </div>
+    <!-- Botón de contacto -->
+    <div class="portfolio-cta">
+      <a href="#contacto" class="cta-button">Solicitar cotización</a>
+    </div>
   </section>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       // Inicializar Swiper
       const swiper = new Swiper('.swiper-container', {
-        loop: true, 
+        loop: true,
         autoplay: {
-          delay: 3000, 
-          disableOnInteraction: false, 
+          delay: 3000,
+          disableOnInteraction: false,
         },
         navigation: {
           nextEl: '.swiper-button-next',
@@ -157,32 +211,48 @@
       });
       const swiperContainer = document.querySelector('.swiper-container');
       const swiperHint = document.getElementById('swiperHint');
-  
+
       swiperContainer.addEventListener('mouseenter', () => {
         swiperHint.style.opacity = '1';
       });
-  
+
       swiperContainer.addEventListener('mouseleave', () => {
         swiperHint.style.opacity = '0';
       });
     });
   </script>
-  
-  
 
 
 
+  <!-- Testimonios -->
 
-  <!-- Clientes -->
-  <section id="clients" class="clients">
-    <h2>Nuestros Clientes</h2>
-    <div class="logos">
-      <div class="logo-item">Logo 1</div>
-      <div class="logo-item">Logo 2</div>
-      <div class="logo-item">Logo 3</div>
-      <div class="logo-item">Logo 4</div>
+  <!-- Testimonios -->
+  <section id="testimonials" class="testimonials">
+    <canvas id="star-canvas"></canvas> 
+    <div class="container">
+      <h2>Lo que dicen nuestros clientes</h2>
+      <div class="testimonial-cards">
+        <div class="testimonial">
+          <p>"¡La web quedó increíble! Superó nuestras expectativas y recibimos muchos elogios."</p>
+          <h4>Juan Pérez</h4>
+          <span>CEO en NegocioX</span>
+        </div>
+        <div class="testimonial">
+          <p>"Ethereal Code entendió exactamente lo que necesitábamos. 100% recomendados."</p>
+          <h4>María Gómez</h4>
+          <span>Dueña de Café Aroma</span>
+        </div>
+        <div class="testimonial">
+          <p>"Rápidos, creativos y muy profesionales. Mi tienda online está vendiendo más que nunca."</p>
+          <h4>Lucas Díaz</h4>
+          <span>Emprendedor</span>
+        </div>
+      </div>
     </div>
   </section>
+
+
+
 
   <!-- Contacto -->
   <section id="contact" class="contact">
@@ -197,9 +267,22 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2025 MiMarca. Todos los derechos reservados.</p>
+    <p>&copy; 2025 <strong>ETHEREAL CODE</strong> | Desarrollo Web. Todos los derechos reservados.</p>
   </footer>
-  <script src="assets/portafolio.js"></script>
+
+  <script src="assets/particles.js"></script>
+  <script src="assets/menu.js"></script>
+  <script src="assets/logoh1.js"></script>
+  <script src="assets/testimonio.js"></script>
+  <script src="assets/nuestramision.js"></script>
+  <script src="assets/trancisiones.js"></script>
+
+
+
+
+
+
+
 </body>
 
 </html>
