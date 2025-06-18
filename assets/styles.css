@@ -83,12 +83,20 @@ html, body {
 
 .header .menu ul li a {
   color: #ffffff;
+  font-weight: bold;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: all 0.3s ease;
 }
 
 .header .menu ul li a:hover {
-  text-decoration: underline;
+  animation: colorChange 3s infinite alternate;
+}
+@keyframes colorChange {
+  0%   { color: var(--primary-color); }
+  25%  { color: var(--secondary-color); }
+  50%  { color: var(--accent-color); }
+  75%  { color: var(--highlight-color); }
+  100% { color: var(--text-color); }
 }
 
 /* BOTONES MENU */
@@ -539,6 +547,22 @@ html, body {
   background-color: #6ad1c9;
 }
 
+.featured-badge {
+
+  background-color: #ffbd5b;
+  color:var(--text-color);
+  padding: 10px 20px;
+  border-radius:15px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.featured-text {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
 
 /* REVISIÓN DE CODIGO HASTA ACÁ*/
 /* Pricing Section */
@@ -560,6 +584,7 @@ html, body {
   color: #6c757d;
   margin-bottom: 50px;
 }
+
 
 .cards {
   display: grid;
@@ -647,7 +672,7 @@ html, body {
 }
 
 .cta-button {
-  background-color: #83c8ff;
+  background-color: var(--secondary-color)!important;
   color: #ffffff;
   padding: 12px 30px;
   border-radius: 2rem;
@@ -657,7 +682,7 @@ html, body {
 }
 
 .cta-button:hover {
-  background-color: #6ad1c9;
+  background-color: var(--highlight-color)!important;
 }
 .price-card ul li {
   margin-bottom: 10px;
@@ -1101,7 +1126,12 @@ align-items: center;
     color: #fff;
     cursor: pointer;
   }
-  
+  .contact form input:focus,
+.contact form textarea:focus {
+  outline: none; /* Quita el borde negro por defecto */
+  border: 2px solid var(--highlight-color); /* O el color que prefieras */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Opcional: efecto visual suave */
+}
   /* Footer */
   .footer {
     background: var(--text-color);
