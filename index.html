@@ -57,7 +57,7 @@
   </section>
 
   <!-- Nuestra Misión -->
- 
+
   <section id="mission" class="mission">
     <canvas id="ethereal-canvas"></canvas>
     <div class="mission-content">
@@ -92,7 +92,7 @@
   <!-- Portafolio -->
   <section id="portfolio" class="portfolio">
     <h2>Nuestros proyectos</h2>
-  
+
     <!-- Swiper -->
     <div class="swiper-container">
       <div class="swiper-wrapper">
@@ -223,27 +223,103 @@
   </script>
 
 
+  <section class="pricing-ethereal">
+    <div class="container">
+      <h2 class="title">Planes & Precios</h2>
+      <p class="subtitle">Convertí tu idea en una web que impacte</p>
+
+      <div class="cards">
+        <!-- CARD 1 -->
+        <div class="price-card">
+          <img src="/mnt/data/ethereal5.png" alt="Landing page" class="price-img">
+          <h3 class="plan-name">Landing Page</h3>
+          <p class="plan-price">$70 USD</p>
+          <ul>
+            <li>1 sección principal</li>
+            <li>Diseño responsive</li>
+            <li>Formulario de contacto</li>
+          </ul>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="price-card featured">
+          <img src="/mnt/data/73a89f58-f861-44a1-82d6-59fa881860d0.png" alt="Web Compleja" class="price-img">
+          <h3 class="plan-name">Web Compleja</h3>
+          <p class="plan-price">$160 USD</p>
+          <ul>
+            <li>Varias secciones</li>
+            <li>Animaciones suaves</li>
+            <li>Optimización básica SEO</li>
+          </ul>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="price-card">
+          <img src="/mnt/data/ethereal5.png" alt="Ecommerce" class="price-img">
+          <h3 class="plan-name">Ecommerce + Soporte</h3>
+          <p class="plan-price">$300 USD</p>
+          <ul>
+            <li>Carrito y pasarelas de pago</li>
+            <li>Catálogo personalizado</li>
+            <li>Mantenimiento mensual: $20</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="center-button">
+        <a href="#contacto" class="cta-button">Ver otras cotizaciones</a>
+      </div>
+    </div>
+  </section>
 
   <!-- Testimonios -->
   <section id="testimonials" class="testimonials">
-    <canvas id="star-canvas"></canvas> 
+    <canvas id="star-canvas"></canvas>
     <div class="container">
       <h2>Lo que dicen nuestros clientes</h2>
       <div class="testimonial-cards">
         <div class="testimonial">
-          <p>"¡La web quedó increíble! Superó nuestras expectativas y recibimos muchos elogios."</p>
-          <h4>Juan Pérez</h4>
-          <span>CEO en NegocioX</span>
+          <div class="testimonial-img">
+            <img src="assets/img/lucy-2.jpg" alt="Juan Pérez">
+          </div>
+          <p>“Elegí trabajar con Johana después de haber visto su trabajo en otras páginas web. Entendió a la perfección
+            lo que estaba buscando y, más importante, lo que necesitaba para Tinta Dragón y supo plasmarlo desde el
+            primer prototipo hasta la versión final. Tuvimos comunicación constante todo el tiempo, lo cual para mí es
+            lo más importante. Siempre estuvo abierta y receptiva a mi feedback, a los cambios y a los pedidos que yo
+            hacía para la web. La verdad que la recomiendo muchísimo, todo fluyó a la perfección y no tuvimos ni un
+            problema ni contratiempo. Una experiencia increíble 💕”</p>
+          <h4>Lucy Colella</h4>
+          <span><strong> Fundadora</strong>de Tinta Dragón</span>
         </div>
         <div class="testimonial">
-          <p>"Ethereal Code entendió exactamente lo que necesitábamos. 100% recomendados."</p>
-          <h4>María Gómez</h4>
-          <span>Dueña de Café Aroma</span>
+          <div class="testimonial-img">
+            <img src="assets/img/Laly-arce.jpg" alt="Juan Pérez">
+          </div>
+          <p>"Joha supo exactamente lo que quería para mi web y lo hizo realidad. Me aconsejó en cada paso del proceso y
+            convirtió mi idea en algo incluso mejor de lo que imaginé. ¡Una genia total!"</p>
+          <h4>Laly Arce</h4>
+          <span><strong> Fundadora</strong>de La1110</span>
         </div>
         <div class="testimonial">
-          <p>"Rápidos, creativos y muy profesionales. Mi tienda online está vendiendo más que nunca."</p>
-          <h4>Lucas Díaz</h4>
-          <span>Emprendedor</span>
+          <div class="testimonial-img">
+            <img src="assets/img/logo-artemisia.jpg" alt="Juan Pérez">
+          </div>
+          <p>"¡Excelente experiencia!
+            Nos encantó el trabajo que realizaron con nuestra página web. Supieron captar a la perfección la esencia de
+            nuestro proyecto y plasmar lo que estábamos buscando. Siempre atentos, pacientes y con muy buena disposición
+            para acompañarnos en cada paso. ¡Los recomendamos con total confianza!"</p>
+          <h4>Agus y Vivi</h4>
+          <span><strong> Directoras</strong> de Artemisia Montessori</span></span>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-img">
+            <img src="assets/img/logo-Valkyr.jpeg" alt="Juan Pérez">
+          </div>
+          <p>"¡Excelente trabajo! Estoy más que conforme con el asesoramiento y elaboración de la página web. Johana es
+            muy creativa y sabe escuchar las necesidades del cliente, ademas aporta ideas innovadoras que se amoldan a
+            la particularidad de los productos en venta."</p>
+          <h4>Flor</h4>
+          <span><strong>Fundadora</strong> de Valkyria fundas</span>
         </div>
       </div>
     </div>
@@ -255,12 +331,15 @@
   <!-- Contacto -->
   <section id="contact" class="contact">
     <h2>Contáctanos</h2>
-    <form action="#" method="post">
+    <form action="assets/form/form.php" method="POST" id="contact-form">
       <input type="text" name="name" placeholder="Nombre" required>
       <input type="email" name="email" placeholder="Correo Electrónico" required>
+      <input type="text" name="subject" placeholder="Asunto" required>
       <textarea name="message" rows="5" placeholder="Mensaje" required></textarea>
       <button type="submit">Enviar</button>
+      <div id="form-message" style="margin-top: 1rem;"></div>
     </form>
+
   </section>
 
   <!-- Footer -->
@@ -275,6 +354,43 @@
   <script src="assets/nuestramision.js"></script>
 
 
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("contact-form");
+      const messageBox = document.getElementById("form-message");
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        messageBox.textContent = "Enviando...";
+        messageBox.style.color = "#555";
+
+        const formData = new FormData(form);
+
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: formData
+          });
+
+          const result = await response.text();
+
+          if (result.trim() === "OK") {
+            messageBox.textContent = "¡Mensaje enviado con éxito!";
+            messageBox.style.color = "green";
+            form.reset();
+          } else {
+            messageBox.textContent = result;
+            messageBox.style.color = "red";
+          }
+        } catch (err) {
+          messageBox.textContent = "Error de red. Intenta más tarde.";
+          messageBox.style.color = "red";
+        }
+      });
+    });
+  </script>
 
 
 
