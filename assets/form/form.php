@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Enviar correo
     if (mail($to, $subject, $mailBody, $headers)) {
-        echo "OK"; // Usamos "OK" para que JS lo interprete fácil
+        echo "OK"; 
     } else {
         echo "Error al enviar el correo. Intenta más tarde.";
     }

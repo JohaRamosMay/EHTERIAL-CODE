@@ -520,14 +520,14 @@ html, body {
 /* Pricing Section */
 
 .pricing-ethereal {
-  background: linear-gradient(135deg, #f8f9fa, #e0f7ff);
-  padding: 80px 20px;
+  background-color: var(--background-color);
+  padding: 30px 20px;
   text-align: center;
 }
 
 .title {
   font-size: 2.8rem;
-  color: #212529;
+  color: var(--secondary-color);
   margin-bottom: 10px;
 }
 
@@ -680,6 +680,7 @@ html, body {
 .portfolio {
 text-align: center;
 padding: 2rem 1rem;
+background: linear-gradient(135deg, #031e38, #2a7994);
 }
 
 .portfolio h2 {
@@ -1095,7 +1096,6 @@ align-items: center;
   color: var(--primary-color);
 }
 
-/* Contenedor del form y las cards */
 .contact-container {
   display: flex;
   justify-content: center;
@@ -1106,7 +1106,6 @@ align-items: center;
   margin: 0 auto;
 }
 
-/* FORMULARIO */
 #contact-form {
   flex: 1 1 500px;
   max-width: 500px;
@@ -1149,7 +1148,7 @@ align-items: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* CARDS DE CONTACTO */
+
 .contact-cards {
   flex: 1;
   min-width: 250px;
@@ -1181,8 +1180,10 @@ align-items: center;
 }
 
 .contact-card p {
+  font-size: 1.2rem;
   margin: 0;
-  color: #333;
+  color: var(--secondary-color);
+  font-weight: bold;
 }
 
 /* RESPONSIVE */
