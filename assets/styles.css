@@ -462,8 +462,8 @@ html, body {
 }
 
 .title {
-  font-size: 2.8rem;
-  color: #212529;
+  font-size: 2.5rem;
+  color: var(--secondary-color);
   margin-bottom: 10px;
 }
 
@@ -784,6 +784,21 @@ box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 
 .portfolio .phone.left {
 transform: translateY(20px); 
+}
+
+#portfolio {
+  position: relative;
+  overflow: hidden;
+}
+
+#particles-portfolio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
 }
 
 /* Swiper general styles */

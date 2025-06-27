@@ -5,7 +5,7 @@ const ctx = canvas.getContext('2d');
 
 let particles = [];
 const particleCount = 50;
-const colors = ['#ba80ff', '#83c8ff', '#6ad1c9'];
+const colors = ['#ba80ff', '#c0c0c0', '#f8f9fa' , '#6ad1c9' , '#83c8ff' ]; 
 
 function resizeCanvas() {
   canvas.width = canvas.offsetWidth;
