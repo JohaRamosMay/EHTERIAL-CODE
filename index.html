@@ -5,12 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ethereal Code | Desarrollo Web</title>
+  <!-- Favicon -->
+   <link rel="icon" href="assets/img/logo3.png" type="image/png">
+
   <!-- CDN de Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <!-- CDN de Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <!-- Enlace al CSS externo -->
-  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/styles-v1.css">
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
   <!-- Swiper JS -->
@@ -22,12 +28,30 @@
 </head>
 
 <body>
+
+  <!-- Top bar 
+<div class="top-bar-ethereal">
+  <div class="top-bar-left">
+    <span><i class="bi bi-whatsapp"></i> +54 351 7061589</span>
+    <span><i class="bi bi-envelope-fill"></i> etherealcode@gmail.com</span>
+  </div>
+  <div class="top-bar-right">
+    <a href="#"><i class="bi bi-instagram"></i></a>
+    <a href="#"><i class="bi bi-linkedin"></i></a>
+    <a href="#"><i class="bi bi-github"></i></a>
+    <a href="#"><i class="bi bi-whatsapp"></i></a>
+   
+  </div>
+</div>-->
+
   <!-- Menú -->
   <header class="header">
     <div class="container">
       <div class="logo">
         <h1><strong><span id="logo-text">ETHEREAL CODE</span> |</strong></h1>
       </div>
+      
+
       <!-- Botón hamburguesa -->
       <div class="menu-toggle" id="menu-toggle">☰</div>
 
@@ -94,7 +118,7 @@
 
   <!-- Portafolio -->
   <section id="portfolio" class="portfolio">
-    <canvas id="particles-portfolio"></canvas> 
+    <canvas id="particles-portfolio"></canvas>
     <h2>Nuestros proyectos</h2>
 
     <!-- Swiper -->
@@ -115,7 +139,7 @@
             </div>
           </div>
 
-          
+
         </div>
         <!-- Proyecto 2 -->
         <div class="swiper-slide">
@@ -144,20 +168,7 @@
           </div>
         </div>
         <!-- Proyecto 4 -->
-        <div class="swiper-slide">
-          <div class="showcase">
-            <div class="device phone left">
-              <img src="assets/img/artemisia-mobile.jpg" alt="Vista móvil izquierda Proyecto 5">
-            </div>
-            <div class="device laptop">
-              <a href="https://artemisiamontessori.com.ar/" target="_blank">
-                <img src="assets/img/artemisia.png" alt="Vista escritorio Proyecto 5">
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- Proyecto 5 -->
-        <div class="swiper-slide">
+         <div class="swiper-slide">
           <div class="showcase">
             <div class="device phone left">
               <img src="assets/img/valkyria-phone.jpg" alt="Vista móvil izquierda Proyecto 6">
@@ -169,6 +180,21 @@
             </div>
           </div>
         </div>
+        
+        <!-- Proyecto 5 -->
+         <div class="swiper-slide">
+          <div class="showcase">
+            <div class="device phone left">
+              <img src="assets/img/artemisia-mobile.jpg" alt="Vista móvil izquierda Proyecto 5">
+            </div>
+            <div class="device laptop">
+              <a href="https://artemisiamontessori.com.ar/" target="_blank">
+                <img src="assets/img/artemisia.png" alt="Vista escritorio Proyecto 5">
+              </a>
+            </div>
+          </div>
+        </div>
+        
 
 
       </div>
@@ -180,7 +206,7 @@
     </div>
     <!-- Botón de contacto -->
     <div class="portfolio-cta">
-      <a href="#contacto" class="cta-button">Solicitar cotización</a>
+      <a href="ethereal-cotizacion/index.html" class="cta-button">Solicitar cotización</a>
     </div>
   </section>
   <script>
@@ -224,7 +250,7 @@
     });
   </script>
 
-
+  <!-- Precios -->
   <section class="pricing-ethereal">
     <div class="container">
       <h2 class="title">Planes & Precios</h2>
@@ -233,72 +259,81 @@
       <div class="cards">
         <!-- CARD 1 -->
         <div class="price-card featured">
-          
-          <h3 class="plan-name">Landing page</h3>
+        
+          <h3 class="plan-name">Plan Emprendedor</h3>
+          <br>
           <img src="assets/img/1.png" alt="Landing page" class="price-img">
           <p class="plan-price">$70 USD</p>
           <ul>
-            <li><i class="bi bi-check-circle-fill"></i>1 sección principal</li>
+            <li><i class="bi bi-check-circle-fill"></i>1 sección (landig page)</li>
             <li><i class="bi bi-check-circle-fill"></i>Diseño responsive</li>
             <li><i class="bi bi-check-circle-fill"></i>Formulario de contacto</li>
-            <li><i class="bi bi-check-circle-fill"></i>Redes sociales</li>
+            <li><i class="bi bi-check-circle-fill"></i>Integración con redes sociales</li>
+            <li><i class="bi bi-check-circle-fill"></i>Optimización básica (velocidad y SEO inicial)</li>
             <br>
             <br>
             <br>
             <br>
           </ul>
-          <div class="featured-badge">Más Económico</div>
-          <p class="featured-text">¡Ideal para presentar tu negocio de forma efectiva!</p>
-          <a href="#contacto" class="cta-button"> Pedi tu web</a>
+
+          <p class="featured-text">Presentá tu negocio de forma clara y profesional.</p>
+          <a href="https://wa.me/5493517061589?text=Hola,%20quiero%20una%20cotizaci%C3%B3n%20de%20Landing%20Page"
+            target="_blank" class="cta-button"> Pedi tu web</a>
         </div>
 
         <!-- CARD 2 -->
         <div class="price-card featured">
-          
-          <h3 class="plan-name">Web compleja</h3>
+
+          <h3 class="plan-name">Plan Profesional </h3>
+          <br>
           <img src="assets/img/2.png" alt="Landing page" class="price-img">
-          <p class="plan-price">$160 USD</p>
+          <p class="plan-price">$250 USD</p>
           <ul>
-            <li><i class="bi bi-check-circle-fill"></i>Varias secciones</li>
+            <li><i class="bi bi-check-circle-fill"></i>Multipágina (hasta 5 secciones)</li>
             <li><i class="bi bi-check-circle-fill"></i>Animaciones suaves</li>
-            <li><i class="bi bi-check-circle-fill"></i>Optimización básica SEO</li>
-            <li><i class="bi bi-check-circle-fill"></i>Soporte 1 mes</li>
-            <li><i class="bi bi-check-circle-fill"></i>Redes sociales</li>
-            <li><i class="bi bi-check-circle-fill"></i>Formulario de contacto</li>
+            <li><i class="bi bi-check-circle-fill"></i>SEO básico y Google Search Console</li>
+            <li><i class="bi bi-check-circle-fill"></i>Formulario avanzado + WhatsApp</li>
+            <li><i class="bi bi-check-circle-fill"></i>Integración con redes + mapa</li>
+            <li><i class="bi bi-check-circle-fill"></i>1 mes de soporte técnico</li>
+            <li><i class="bi bi-check-circle-fill"></i>Panel de autogestión básico (editar textos y fotos)</li>
             <br>
-  
+
 
           </ul>
-          <div class="featured-badge">Más Popular</div>
-          <p class="featured-text">¡Elige este plan para una web completa y profesional!</p>
-          <a href="#contacto" class="cta-button">Pedi tu web</a>
+
+          <p class="featured-text">Mostrá tu catálogo, servicios, equipo, contacto y más.</p>
+          <a href="https://wa.me/5493517061589?text=Hola,%20quiero%20una%20cotizaci%C3%B3n%20para%20un%20sitio%20web"
+            target="_blank" class="cta-button">Pedi tu web</a>
         </div>
 
         <!-- CARD 3 -->
         <div class="price-card featured">
-        
-          <h3 class="plan-name">Ecommerce + Soporte</h3>
+
+          <h3 class="plan-name">Plan Empresa / Ecommerce + Sistema </h3>
           <img src="assets/img/3.png" alt="Landing page" class="price-img">
-          <p class="plan-price">$300 USD</p>
+          <p class="plan-price">$450 USD</p>
+          <p>Para empresas, tiendas online o proyectos con necesidades específicas.</p>
           <ul>
-            <li><i class="bi bi-check-circle-fill"></i>Carrito y pasarelas de pago</li>
-            <li><i class="bi bi-check-circle-fill"></i>Catálogo personalizado</li>
-            <li><i class="bi bi-check-circle-fill"></i>Mantenimiento mensual: $20</li>
-            <li><i class="bi bi-check-circle-fill"></i>Soporte técnico 3 meses</li>
-            <li><i class="bi bi-check-circle-fill"></i>Optimización avanzada SEO </li>
-            <li><i class="bi bi-check-circle-fill"></i>Redes sociales</li>
-            <li><i class="bi bi-check-circle-fill"></i>Sistemas de gestión</li>
+            <li><i class="bi bi-check-circle-fill"></i>Carrito + pasarelas de pago</li>
+            <li><i class="bi bi-check-circle-fill"></i>Catálogo avanzado y personalizado</li>
+            <li><i class="bi bi-check-circle-fill"></i>SEO avanzado</li>
+            <li><i class="bi bi-check-circle-fill"></i>Sistema de gestión personalizado (usuarios, turnos, clases, etc.)</li>
+            <li><i class="bi bi-check-circle-fill"></i>Módulos adaptados (veterinarias, médicos, educación, reservas, etc.) </li>
+            <li><i class="bi bi-check-circle-fill"></i>Panel administrador completo</li>
+            <li><i class="bi bi-check-circle-fill"></i>Soporte 3 meses</li>
+            <li><i class="bi bi-check-circle-fill"></i>Mantenimiento opcional desde $20/mes</li>
           </ul>
-          <div class="featured-badge">Más Completo</div>
-          <p class="featured-text" >¡Lleva tu negocio al siguiente nivel con un ecommerce!</p>
-          <a href="#contacto" class="cta-button">Pedi tu web</a>
+
+          <p class="featured-text">Llevá tu negocio al siguiente nivel con herramientas a medida.</p>
+          <a href="https://wa.me/5493517061589?text=Hola,%20quiero%20una%20cotizaci%C3%B3n%20de%20Ecommerce"
+            target="_blank" class="cta-button">Pedi tu web</a>
         </div>
       </div>
 
       <p class="featured-text">* Para un plan personalizado, contáctanos.</p>
 
       <div class="center-button">
-        <a href="#contacto" class="cta-button">Ver otras cotizaciones</a>
+        <a href="/ethereal-cotizacion/index.html" class="cta-button">Ver otras cotizaciones</a>
       </div>
     </div>
   </section>
@@ -362,28 +397,60 @@
   <!-- Contacto -->
   <section id="contact" class="contact">
     <h2>Contáctanos</h2>
-    <form action="assets/form/form.php" method="POST" id="contact-form">
-      <input type="text" name="name" placeholder="Nombre" required>
-      <input type="email" name="email" placeholder="Correo Electrónico" required>
-      <input type="text" name="subject" placeholder="Asunto" required>
-      <textarea name="message" rows="5" placeholder="Mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-      <div id="form-message" style="margin-top: 1rem;"></div>
-    </form>
+    <div class="contact-container">
+      <!-- Info de contacto -->
+      <div class="contact-cards">
+        <div class="contact-card">
+          <i class="bi bi-envelope-fill"></i>
+          <div>
+            <h3>Email</h3>
+            <p>etherealcode@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <i class="bi bi-whatsapp"></i>
+          <div>
+            <h3>WhatsApp</h3>
+            <p>+54 351 706 1589</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <i class="bi bi-geo-alt-fill"></i>
+          <div>
+            <h3>Ubicación</h3>
+            <p>Córdoba, Argentina</p>
+          </div>
+        </div>
+      </div>
 
+      <!-- Formulario -->
+      <form action="assets/form/form.php" method="POST" id="contact-form">
+        <input type="text" name="name" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo Electrónico" required>
+        <input type="text" name="subject" placeholder="Asunto" required>
+        <textarea name="message" rows="5" placeholder="Mensaje" required></textarea>
+        <button class="cta-button" type="submit">Enviar</button>
+        <div id="form-message" style="margin-top: 1rem;"></div>
+      </form>
+
+
+    </div>
   </section>
+
+
 
   <!-- Footer -->
   <footer class="footer">
     <p>&copy; 2025 <strong>ETHEREAL CODE</strong> | Desarrollo Web. Todos los derechos reservados.</p>
   </footer>
 
-  <script src="assets/particles.js"></script>
-  <script src="assets/menu.js"></script>
-  <script src="assets/logoh1.js"></script>
-  <script src="assets/testimonio.js"></script>
-  <script src="assets/nuestramision.js"></script>
-  <script src="assets/portafolio.js"></script>
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/logoh1.js"></script>
+  <script src="assets/js/testimonio.js"></script>
+  <script src="assets/js/nuestramision.js"></script>
+  <script src="assets/js/portafolio.js"></script>
+
 
 
 
